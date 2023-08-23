@@ -1,0 +1,34 @@
+.notice-board .title {
+    font-weight: bold;
+}
+
+.notice-board .date{
+    background-color: rgb(15, 69, 51);
+    color: white;
+    padding: 5px 15px 5px 15px;
+    border-radius: 25px;
+}
+
+.notice-board .text{
+    font-weight: 500;
+    color: rgb(80, 78, 78);
+    font-size: 1.01em;
+}
+
+.notice-board .author{
+    font-size: 1.2em;
+
+}
+.notice-board .time{
+    font-size: 0.9em;
+    color: grey;
+}
+
+.notice-board{
+    border: 1px solid rgb(207, 126, 126);
+    box-shadow: 6px 4px 12px -4px rgba(176,88,88,0.99) inset;
+-webkit-box-shadow: 6px 4px 12px -4px rgba(176,88,88,0.99) inset;
+-moz-box-shadow: 6px 4px 12px -4px rgba(176,88,88,0.99) inset;
+    padding: 5px 20px 5px 20px;
+    margin-bottom: 25px;
+}

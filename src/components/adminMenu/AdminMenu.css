@@ -1,0 +1,9 @@
+.adminmenu-image{
+    width: 30px;
+    height: 30px;
+}
+
+.active{
+    border-bottom: 1px solid blue;
+    width: fit-content;
+}

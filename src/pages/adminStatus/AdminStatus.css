@@ -1,0 +1,20 @@
+
+.status-container{
+    margin-top: 30px;
+}
+.Cards{
+    display: flex;
+    justify-content: space-between;
+}
+.pie-calendar{
+    margin-top: 25px;
+    display: flex;
+}
+
+.pie-calendar .pie{
+    flex: 1;
+}
+
+.pie-calendar .calendar{
+    flex: 2;
+}

@@ -1,0 +1,140 @@
+
+.profile-admin{
+    background: rgb(240, 235, 235);
+    margin-top: 30px;
+    padding: 10px;
+    display: flex;
+    border-radius: 15px 15px 0px 0px;
+}
+.profileadmin-info{
+    
+    flex: 4;
+    display: flex;
+}
+
+.profileadmin-image{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profileadmin-image img{
+    width: 90px;
+    height: 90px;
+    /* border: 1px solid black; */
+    border-radius: 50%;
+}
+.profileadmin-name{
+    flex: 3
+}
+.profileadmin-name span{
+    width: 10px;
+    height: 10px;
+}
+.edit-btn{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+}
+.edit-btn button{
+    color: rgb(72, 31, 221);
+    font-weight: bold;
+    border: none;
+    background: transparent;
+}
+
+.edit-btn button:hover{
+    /* border: 1px solid rgb(165, 158, 158); */
+    transform: scale(1.1);
+}
+.profile-buttons button{
+    padding: 10px;
+    color: #818181;
+    background-color: transparent;
+    border: none;
+    margin: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.profile-buttons button.active {
+    background-color: rgb(85, 51, 255); /* Change the color for active state */
+    color: white;
+  }
+
+.profile-container{
+    margin-bottom: 30px;
+    border-radius: 15px 15px 0px 0px;
+    box-shadow: 4px 3px 6px 0px rgba(171,171,171,1);
+-webkit-box-shadow: 4px 3px 6px 0px rgba(171,171,171,1);
+-moz-box-shadow: 4px 3px 6px 0px rgba(171,171,171,1);
+}
+.profile-details{
+    padding: 20px;
+    background: rgb(240, 235, 235);
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.personal-title{
+    display: flex;
+}
+
+.personal-title h2{
+    flex: 4;
+}
+.personal-title button{
+    flex: 1;
+    color: rgb(72, 31, 221);
+    font-weight: bold;
+    border: none;
+    background: transparent;
+    display: flex;
+    justify-content: flex-end;
+    align-items: start;
+}
+.personal-title button:hover{
+    transform: scale(1.1);
+}
+
+.change-password-form {
+    /* max-width: 400px; */
+    margin: 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgb(240, 235, 235);
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="password"] {
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .error-message {
+    color: red;
+    margin-top: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: rgb(72, 31, 221);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

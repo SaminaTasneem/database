@@ -1,0 +1,225 @@
+.card-container{
+  border: 1px solid #ccc;
+  padding: 0px;
+  min-width: 250px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.card-container .left{
+    flex: 2;
+    padding-left: 20px;
+}
+.card-container .left h2{
+    font-size: 24px;
+    color: gray;
+    margin-bottom: 5px;
+}
+
+.card-container .left h4{
+    font-size: 20px;
+    margin-top: 5px;
+}
+.card-container .right{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.card-container .right img{
+    width: 60px;
+    height: 60px;
+}
+
+/* table */
+
+.dialog .table-list{
+    padding-top: 20px;
+    overflow-y: auto;
+    /* min-width: 900px; */
+}
+
+.dialog .table-list table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+
+}
+
+.dialog .table-list table thead{
+    border: 1px solid #e2e9e1;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 5px;
+}
+
+.table-list table td:nth-child(1){
+    width: 100px;
+    text-align: center;
+}
+.table-list table td:nth-child(2),
+.table-list table td:nth-child(5){
+    width: 120px;
+    text-align: center;
+}
+.table-list table td:nth-child(3){
+    width: 70px;
+    text-align: center;
+}
+.table-list table td:nth-child(4)
+{
+    width: 100px;
+    text-align: center;
+}
+.table-list table td:nth-child(6){
+    width: 120px;
+    text-align: center;
+}
+.table-list table td:nth-child(7){
+    width: 250px;
+    text-align: center;
+}
+.table-list table td:nth-child(8){
+    width: 75px;
+    text-align: center;
+}
+.table-list table button{
+    background-color: rgb(113, 47, 225);
+    border: none;
+    color: #fff;
+    padding: 5px;
+}
+
+.table-list table button:hover{
+    transform: scale(1.1);
+}
+
+.dialog .table-list table thead td{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 18px 0;
+}
+
+.dialog .table-list table tbody tr td{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.dialog .table-list table tbody td{
+    font-size: 16px;
+}
+
+.dialog-name{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+/* profile dialog */
+.profile{
+    display: flex;
+    /* flex-direction: row; */
+}
+.profile-image{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile-image img{
+    width: 400px;
+    height: 400px;
+}
+.profile-details{
+    flex: 1;
+}
+
+.profile-details .left-side{
+   display: inline-block;
+   width: 150px;
+   font-size: 18px;
+   font-weight: 500;
+   color: rgb(90, 76, 76);
+   margin-bottom: 4px;
+}
+
+.profile-details .right-side{
+    font-size: 18px;
+    font-weight: 400;
+}
+.profile-button{
+    margin-top: 15px;
+    display: flex;
+    gap: 20px;
+}
+
+.dialog-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(143, 102, 102);
+}
+.dialog-title .closeIcon{
+    cursor: pointer;
+}
+
+/* course dialog */
+.course{
+    padding-top: 20px;
+    overflow-y: auto;
+    /* min-width: 900px; */
+}
+
+.course table{
+    width: 100%;
+    border-collapse: collapse;
+    /* table-layout: fixed; */
+    white-space: nowrap;
+
+}
+
+.course table thead{
+    border: 1px solid #e2e9e1;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 10px;
+}
+
+.course table td:nth-child(1){
+    width: 100px;
+}
+.course table td:nth-child(2){
+    width: 300px;
+}
+.course table td:nth-child(3){
+    width: 100px;
+}
+.course table td:nth-child(4){
+    width: 80px;
+}
+.course table td:nth-child(5){
+    width: 200px;
+}
+
+.course table thead td{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 18px 0;
+}
+
+.course table tbody tr td{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.course table tbody td{
+    font-size: 16px;
+}
