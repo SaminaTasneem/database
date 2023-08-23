@@ -1,0 +1,25 @@
+
+
+.teacher-cards{
+    display: flex;
+    gap: 30px;
+    justify-content: flex-start;
+    /* align-items: center; */
+}
+.teacher-pie-calendar{
+    display: flex;
+    
+    /* margin-bottom: -55px; */
+}
+.teacher-pie{
+    margin-top: 30px;
+}
+
+.teacher-calendar{
+    margin-top: 30px;
+    margin-left: 25px;
+}
+
+.lessons{
+    margin-top: 30px;
+}

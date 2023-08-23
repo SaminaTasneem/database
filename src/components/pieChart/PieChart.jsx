@@ -1,16 +1,19 @@
 import React from 'react'
 import { PieChart } from '@mui/x-charts/PieChart';
 import './PieChart.css';
+import CircleIcon from '@mui/icons-material/Circle';
 
 const Piechart = () => {
   return (
+    <>
+    <div className="pie-chart-container">
     <PieChart
     colors={['pink','blue']}
   series={[
     {
       data: [
-        { id: 0, value: 15, label: 'Girls' },
-        { id: 1, value: 10, label: 'Boys' },
+        { id: 0, value: 15},
+        { id: 1, value: 10},
         
       ],
       innerRadius: 50,
@@ -23,9 +26,16 @@ const Piechart = () => {
       cy: 150,
     },
   ]}
-  width={400}
-  height={400}
+  width={300}
+  height={280}
 />
+
+    <div className="pie-chart-labels">
+        <span className='pie-chart-labels'> <CircleIcon className='girls'/>Girls</span>
+        <span className='pie-chart-labels'> <CircleIcon className='boys'/>Boys</span>
+    </div>
+  </div>
+</>
   )
 }
 
