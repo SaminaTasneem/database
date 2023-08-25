@@ -59,11 +59,11 @@ const AdminStatus = () => {
             
             <div className='profile-buttons'>
                 <button onClick={handleAbout} 
-                className={about ? 'active' : ''}
+                className={about ? 'password-btn active' : 'password-btn'}
                 >
                 About</button>
                 <button onClick={handlePassword}
-                className={password ? 'active' : ''}
+                className={password ? 'password-btn active' : 'password-btn'}
                 >Password</button>
             </div>
             </div>

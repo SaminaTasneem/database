@@ -17,7 +17,7 @@ const UpcomingLessons = () => {
       date: '2023-08-26',
       time: '02:30 PM',
     },
-    // Add more lessons here
+    
   ];
 
   return (

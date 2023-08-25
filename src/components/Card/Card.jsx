@@ -4,6 +4,7 @@ import './Card.css';
 import CloseIcon from '@mui/icons-material/Close';
 import TeacherProfile from '../smallComponents/teacherProfile/TeacherProfile';
 import { Height } from '@mui/icons-material';
+import { NavLink, useNavigate } from 'react-router-dom';
 
 const Card = (props) => {
 
@@ -12,6 +13,10 @@ const Card = (props) => {
     const [openTeacher, setOpenTeacher]=useState(false);
   const [openProfile, setOpenProfile]=useState(false);
   const [openCProfile, setOpenCProfile]=useState(false);
+  const [openTcourse, setOpenTcourse]=useState(false);
+  const [openTeachercourse, setOpenTeachercourse]=useState(false); 
+  const navigate = useNavigate();
+  
   const handleOpenCard=()=>{
      if(props.type==='student'){
         setOpenStudent(true);
@@ -20,6 +25,7 @@ const Card = (props) => {
         setOpenCourse(true);
      }
      else if(props.type==='teacher') setOpenTeacher(true);
+     else if(props.type==='teacher-course') setOpenTcourse(true);
   }
   const handleCloseCard=()=>{
     // setOpenCard(false);
@@ -29,7 +35,8 @@ const Card = (props) => {
      else if(props.type==='course'){
         setOpenCourse(false);
      }
-     else setOpenTeacher(false);
+     else if(props.type==='teacher') setOpenTeacher(false);
+     else if (props.type==='teacher-course') setOpenTcourse(false);
   }
 
   const handleOpenProfile=()=>{
@@ -43,6 +50,15 @@ const Card = (props) => {
   }
   const handleCloseCProfile=()=>{
     setOpenCProfile(false);
+  }
+  const handleOpenTeachercourse=()=>{
+    setOpenTeachercourse(true);
+  }
+  const handleCloseTeachercourse=()=>{
+    setOpenTeachercourse(false);
+  }
+  const handleRowClick=()=>{
+    navigate('/teacher-course-details');
   }
 
 
@@ -63,6 +79,13 @@ const Card = (props) => {
         }
     break;
     case 'course': 
+        data={
+            title: 'COURSE',
+            counter: '1234',
+            image: '/images/course-logo.png'
+        }
+    break;
+    case 'teacher-course': 
         data={
             title: 'COURSE',
             counter: '1234',
@@ -278,6 +301,51 @@ const Card = (props) => {
         </DialogActions>
     </Dialog>
     {/* Teacher Dialog Ends */}
+    {/* Teacher course starts */}
+    <Dialog
+    open={openTcourse}
+    keepMounted
+    onClose={handleCloseCard}
+    className='dialog'
+    aria-labelledby="checkout-dialog-title"
+    aria-describedby="checkout-dialog-description"
+    maxWidth='md'
+    fullWidth
+    >
+    <DialogTitle className='dialog-name'
+    style={{fontSize: '30px', fontWeight: 'bold'}}>
+    Course List</DialogTitle>
+    <DialogContent>
+    <section className='course'>
+    <table width="100%">
+        <thead className='thead'>
+            <tr>
+                <td>Image</td>
+                <td>Title</td>
+                <td>Code</td>
+                <td>Credit</td>
+                <td>Prerequisite</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr onClick={handleRowClick} style={{cursor: 'pointer'}}>
+                <td>Image</td>
+                <td>Database Management System</td>
+                <td>CSE333</td>
+                <td>3</td>
+                <td>None</td>
+            </tr>
+        </tbody>
+    </table>
+    </section>
+    </DialogContent>
+    <DialogActions>
+    <Button onClick={handleCloseCard} color="primary">
+        cancel
+    </Button>
+    </DialogActions>
+    </Dialog>
+    {/* Teacher course ends */}
     </>
   )
 }
