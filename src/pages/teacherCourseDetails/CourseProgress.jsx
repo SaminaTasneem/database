@@ -7,6 +7,7 @@ import StepContent from '@mui/material/StepContent';
 import Button from '@mui/material/Button';
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
+// import './CourseProgress.css';
 
 const steps = [
   {
@@ -43,16 +44,17 @@ export default function VerticalLinearStepper() {
   };
 
   return (
+    <div className='course-progress'>
     <Box sx={{ maxWidth: 400 }}>
       <Stepper activeStep={activeStep} orientation="vertical">
         {steps.map((step, index) => (
           <Step key={step.label}>
             <StepLabel
-              optional={
-                index === 2 ? (
-                  <Typography variant="caption">Last step</Typography>
-                ) : null
-              }
+              // optional={
+              //   index === 2 ? (
+              //     <Typography variant="caption">Last step</Typography>
+              //   ) : null
+              // }
             >
               {step.label}
             </StepLabel>
@@ -89,5 +91,6 @@ export default function VerticalLinearStepper() {
         </Paper>
       )}
     </Box>
+    </div>
   );
 }
