@@ -1,3 +1,7 @@
+.notice-board2{
+    max-height: 65vh;
+    overflow-x: auto;
+}
 .notice-board .title {
     font-weight: bold;
 }

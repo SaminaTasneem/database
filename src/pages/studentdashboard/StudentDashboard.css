@@ -20,3 +20,122 @@
 .password-btn:hover{
     transform: scale(1.06);
 }
+.left-right-column{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.student-course-details h6{
+    text-decoration: underline;
+    background: #e3e6f3;
+    padding: 3px;
+    border-radius: 5px;
+}
+.student-course-details .materials {
+    border: 1px solid #e0e0e0;
+    background-color: #e3e6f3;
+    padding: 40px;
+    margin: 10px;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    /* text-align: center; */
+    display: flex;
+    justify-content: flex-start;
+    /* align-items: center; */
+    flex-direction: column;
+  }
+  
+  .student-course-details .materials a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  .student-course-details .materials a:hover {
+    text-decoration: underline;
+  }
+  .student-course-details .materials p{
+    text-decoration: underline;
+  }
+  
+  .student-course-details .materials input[type="file"] {
+    margin-top: 10px;
+  }
+  
+  .student-course-details .materials .file{
+    margin-top: 15px;
+    /* margin-left: 20px; */
+  }
+  
+  .student-course-details .materials .book {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+  }
+
+  .student-course-details .student-stepper{
+     margin: 20px;
+  }
+
+  .student-course-details .circle-background{
+    fill: none;
+    stroke: #ccc
+  }
+  .student-course-details .circle-progress{
+    fill: none;
+    /* stroke: #e3e6f3; */
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  .student-course-details .circle-text{
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  .student-course-details .course-progress{
+    margin-top: 15px;
+  }
+  .student-course-details .student-progress-bar{
+    margin: 20px;
+  }
+  .student-course-details .file button{
+        color: #fff;
+        background: #007bff;
+        border: none;
+  }
+
+  /* AssignmentUpload.css */
+
+  .student-course-details .upload-assignment {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    /* text-align: center; */
+    background-color: #e3e6f3;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .student-course-details .upload-assignment input[type="file"] {
+    margin: 10px 20px 20px 20px;
+  }
+  
+  .student-course-details .upload-assignment button {
+    padding: 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .student-course-details .upload-assignment button:hover {
+    background-color: #0056b3;
+  }
+  

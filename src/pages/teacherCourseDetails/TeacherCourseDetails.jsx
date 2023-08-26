@@ -9,7 +9,7 @@ import ProgressBar from './ProgressBar';
 
 const TeacherCourseDetails = () => {
     const [openStudentList, setOpenStudentList]=useState(true);
-    const [openCourseProgress, setOpenCourseProgress]=useState(true);
+    const [openCourseProgress, setOpenCourseProgress]=useState(false);
     const handleStudentList=()=>{
         setOpenStudentList(true);
         setOpenResource(false);

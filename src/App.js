@@ -6,6 +6,7 @@ import TeacherDashboard from './pages/teacherDashboard/TeacherDashboard';
 import TeacherCourseDetails from './pages/teacherCourseDetails/TeacherCourseDetails';
 import StudentDashboard from './pages/studentdashboard/StudentDashboard';
 import Login from './pages/login-signup/Login';
+import StudentCourseDetails from './pages/studentdashboard/StudentCourseDetails';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path='/teacher-dashboard' element={<TeacherDashboard/>}/>
         <Route path='/teacher-course-details' element={<TeacherCourseDetails/>}/>
         <Route path='/student-dashboard' element={<StudentDashboard/>}/>
+        <Route path='/student-course-details' element={<StudentCourseDetails/>}/>
       </Routes>
     </Router>
   )

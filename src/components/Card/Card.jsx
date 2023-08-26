@@ -266,7 +266,7 @@ const Card = (props) => {
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc purus nisl,
                 ornare vitae quam et, rutrum egestas lorem.Aenean consectetur magna ut volutpat
-                scelerisque.
+                scelerisque.fgh
             </p>
             <span className='left-side'>Course Code: </span><span className='right-side'>CSE333</span><br/>
             <span className='left-side'>Credit: </span><span className='right-side'>3</span><br/>

@@ -7,6 +7,7 @@ import NoticeBoard from '../../components/noticeBoard/NoticeBoard';
 import UpcomingAssignment from '../../components/upcomingAssignment/UpcomingAssignment';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import EditIcon from '@mui/icons-material/Edit';
+import StudentCard from './StudentCard';
 
 const StudentDashboard = () => {
     const [openStudentStatus, setOpenStudentStatus]=useState(true);
@@ -56,8 +57,8 @@ const StudentDashboard = () => {
           </Grid>
           <Grid item xs={12} md={7}>
             <div className='student-card'>
-                <Card type='course'/>
-                <Card type='course'/>
+                <StudentCard type='available'/>
+                <StudentCard type='assigned'/>
             </div>
             <div className='upcoming-student'>
                 <UpcomingLessons/>
