@@ -10,6 +10,7 @@ import UpcomingLessons from '../../components/upcomingLessons/UpcomingLessons';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import EditIcon from '@mui/icons-material/Edit';
 import TeacherCard from '../../components/teacherCard/TeacherCard';
+import Footer from '../../components/footer/Footer';
 
 const TeacherDashboard = () => {
     const [tstatus, setTstatus]=useState(true);
@@ -165,6 +166,7 @@ const TeacherDashboard = () => {
           </Grid>
           </Grid>}
         </Container>
+        <Footer/>
     </>
   )
 }
